@@ -1,10 +1,10 @@
 <?php
 
-$usuario = 'root';
-$contraseña = '';
+$user = 'root';
+$pass = '';
 
 try {
-    $bd = new PDO('mysql:host=localhost;dbname=forum', $usuario, $contraseña);
+    $bd = new PDO('mysql:host=localhost;dbname=forum', $user, $pass);
 } catch (PDOException $e) {
     print "¡Error!: " . $e->getMessage() . "<br/>";
     die();
